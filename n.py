@@ -14,7 +14,7 @@ def run(playwright: Playwright) -> None:
     page.get_by_label("Identifiant :").click()
     page.get_by_label("Identifiant :").fill("elie.molle@etu.umontpellier.fr")
     page.get_by_label("Mot de passe :").click()
-    page.get_by_label("Mot de passe :").fill("Solil30140*()")
+    page.get_by_label("Mot de passe :").fill("")
     page.get_by_role("button", name="󰈈 Toggle Password").click()
     page.get_by_label("Mot de passe :").click()
     page.get_by_label("Mot de passe :").fill("Solil30140*()")
